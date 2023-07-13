@@ -54,14 +54,14 @@ export default function Navbar() {
             <li>
               <Link
                 activeClass="active"
-                to="projects"
+                to="experience"
                 spy
                 smooth
                 duration={500}
                 offset={-145}
                 className="hover:cursor-pointer hover:text-slate-700"
               >
-                Projects
+                Experience
               </Link>
             </li>
             <li>
@@ -91,7 +91,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {toggleMenu && (
         <animated.div
-          className="p-3 bg-red-400 absolute right-0 bottom-0 h-full w-64 md:hidden"
+          className="p-3 bg-red-400 absolute z-50 right-0 bottom-0 h-full w-64 md:hidden"
           style={menuAnimation}
         >
           <div className="flex justify-end">

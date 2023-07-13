@@ -1,41 +1,32 @@
 import { RevealAnimation } from "../utils/RevealAnimation";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="container mx-auto px-5 mb-[300px] text-center lg:text-left"
+      className="container mx-auto px-5 text-center mb-28 md:mb-44 lg:text-left"
     >
       <RevealAnimation>
-        <h2 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block text-7xl text-slate-900 font-main font-extrabold mb-12 md:p-8  md:text-5xl md:mb-8 lg:text-8xl">
+        <h2 className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-red-400 relative inline-block text-5xl text-slate-900 font-main font-extrabold mb-12 md:p-8  md:text-5xl md:mb-8 lg:text-8xl">
           <span className="z-20 relative text-white">About Me</span>
         </h2>
       </RevealAnimation>
       <RevealAnimation>
-        <div className="lg:grid lg:grid-cols-2 lg:gap-6 lg:items-center">
-          <div className="font-main text-xl text-slate-600 tracking-wide leading-7 whitespace-normal mb-12 md:text-base md:mb-8 lg:text-xl">
-            {/* I am a dedicated and self-taught front-end developer currently
-            working at Softtek. With a strong commitment to continuous learning,
-            I strive to stay updated with the latest web technologies and
-            trends, fueled by my curiosity and focus. I believe in the power of
-            collaboration and mentorship, valuing the opportunity to learn from
-            others and contribute to a supportive team environment. Coming from
-            a non-technical background, I embrace every challenge as an
-            opportunity to grow and improve. I am driven by a deep curiosity and
-            a relentless desire to expand my skills and knowledge in the
-  ever-evolving field of web development.*/}
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+          <div className="font-main font-light text-xl text-slate-600 tracking-wide leading-7 whitespace-normal mb-12 md:text-xl md:mb-8 lg:text-xl">
             <p>
               Hey! I'm Kevin, but you can call me Kevs 😁. I have a degree in
               tourism, but my curiosity led me to explore coding through many
-              online resources.
+              online resources. I'm currently working at Softtek, where I've
+              gained valuable experience over the past 2 years.
             </p>
             <br />
             <p>
-              I'm currently working at Softtek, where I've gained valuable
-              experience over the past 2 years. Apart from my job, I also took
-              up freelancing for about a year, which allowed me to further
-              expand my skills. I have a strong passion for learning new things,
-              especially in the field of technology.
+              Apart from my job, I also took up freelancing for about a year,
+              which allowed me to further expand my skills. I have a strong
+              passion for learning new things, especially in the field of
+              technology.
             </p>
             <br />
             <p>
@@ -47,6 +38,22 @@ export default function About() {
               opportunities for growth. If you think you have an opening that
               matches my skill set, feel free to reach out and let's connect!
             </p>
+            <div className="hidden mt-4 mb-4 lg:flex">
+              <p className="text-slate-900 font-main font-extrabold mr-5">
+                My Links
+              </p>
+              <div className="flex items-center">
+                <a className="mr-3" href="https://github.com/kevyyar">
+                  <FaGithub size={30} color="#475569" />
+                </a>
+                <a className="mr-3" href="https://linkedin.com/in/kevyyar">
+                  <FaLinkedin size={30} />
+                </a>
+                <a href="https://instagram.com/kevyyar">
+                  <FaInstagram size={30} />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="grid grid-cols-3 gap-4 mb-20">
             <div className="flex justify-center">
@@ -84,8 +91,8 @@ export default function About() {
             <div className="flex justify-center">
               <svg viewBox="0 0 128 128" className="h-20 w-20 md:h-40 md:w-40">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   fill="#494949"
                   d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286C30.85.995 1.894 29.113 1.885 63.21c-.01 35.079 27.612 63.064 62.209 63.014zM63.993 4.63c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719a849.593 849.593 0 0126.618.008c1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58l19.349 57.56c2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113C74.333.881 34.431 9.317 19.728 34.922c5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zm10.117 77.971c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zm-8.456-2.078l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zm76.428-44.562c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"
                 ></path>

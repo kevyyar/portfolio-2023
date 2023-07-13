@@ -1,5 +1,5 @@
+import { Quoute } from "@components/quote/Quote";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { Quoute } from "../quote";
 import { RevealAnimation } from "../utils/RevealAnimation";
 
 export default function Hero() {
@@ -7,11 +7,11 @@ export default function Hero() {
     <>
       <main
         id="home"
-        className="container mx-auto px-5 lg:grid lg:grid-cols-2 lg:gap-4"
+        className="container mx-auto px-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:mb-[200px]"
       >
         <section className="container mx-auto lg:mr-24">
           <RevealAnimation>
-            <h1 className="text-center text-7xl text-slate-900 font-main font-extrabold mb-12 md:text-5xl md:mb-8 lg:text-8xl">
+            <h1 className="text-center text-7xl text-slate-900 font-main font-extrabold mb-12 md:text-7xl md:mb-8 lg:text-8xl">
               Hi! I Am{" "}
               <span className="hidden md:inline-block md:text-sm md:align-middle md:bg-blue-500 md:rounded-3xl md:p-3 md:text-white lg:text-2xl lg:p-4">
                 FE Developer
@@ -23,7 +23,7 @@ export default function Hero() {
             </h1>
           </RevealAnimation>
           <RevealAnimation>
-            <p className="font-main text-center text-xl text-slate-600 tracking-wide leading-7 whitespace-normal mb-12 md:text-base md:mb-8 lg:text-xl">
+            <p className="font-main font-light text-center text-xl text-slate-600 tracking-wide leading-7 whitespace-normal mb-12 md:text-xl md:mb-8">
               As a dedicated web developer, I am skilled in delivering
               exceptional user experiences and driving digital innovation. With
               a results-oriented approach and a passion for staying current with
@@ -42,13 +42,15 @@ export default function Hero() {
                 Projects <RiArrowRightUpLine size={30} color="rgb(15 23 42)" />
               </button>
             </div>
+            <Quoute />
           </RevealAnimation>
         </section>
         <RevealAnimation>
-          <section className="hidden lg:block lg:bg-[url('/assets/me.jpg']) lg:h-full lg:object-cover lg:rounded-xl" />
+          <section className="hidden lg:block lg:h-full lg:object-cover lg:rounded-xl">
+            <img src="/assets/me.jpg" alt="Me!" />
+          </section>
         </RevealAnimation>
       </main>
-      <Quoute />
     </>
   );
 }
